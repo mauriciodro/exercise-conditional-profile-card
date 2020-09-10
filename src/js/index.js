@@ -47,7 +47,9 @@ function render(variables = {}) {
   if (variables.country == null) {
     variables.country = "";
   }
-
+  if (variables.socialMediaPosition == null) {
+    variables.socialMediaPosition = "position-left";
+  }
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
             
@@ -74,9 +76,9 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background: "https://i.postimg.cc/nrZdGQZ3/leidainformatica.jpg",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://i.postimg.cc/6pQmPRZS/homeless.png",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
